@@ -165,7 +165,7 @@ void Game(const element_tablic& kok){  /// Начинает игру
 }
 
 void komandi(){  ///Выводит доступные команды
-        cout << "Выберите команду:" << endl << " 0 - 'Вывести список команд'" << endl << " 1 - 'Продолжить создавать разветвления'" << endl << " 2 - 'Добавить текст перехода из одной вершины в другую'" << endl << " 3 - 'Добавить текст при попадании на данную вершину'" << endl << " 4 - 'Завершить'" << endl << " 5 - 'Информация о вершине'" << endl << " 6 - 'Связать две вершины'" << endl << " 7 - 'Вывести таблицу'" << endl <<" 8 - 'Начать игру'" << endl << " 9 - 'Сохранить'" << endl << "10 - 'Открыть игру из файла" << endl;
+    cout << "Выберите команду:" << endl << " 0 - 'Вывести список команд'" << endl << " 1 - 'Продолжить создавать разветвления'" << endl << " 2 - 'Добавить текст перехода из одной вершины в другую'" << endl << " 3 - 'Добавить текст при попадании на данную вершину'" << endl << " 4 - 'Завершить'" << endl << " 5 - 'Информация о вершине'" << endl << " 6 - 'Связать две вершины'" << endl << " 7 - 'Вывести таблицу'" << endl <<" 8 - 'Начать игру'" << endl << " 9 - 'Сохранить'" << endl << "10 - 'Открыть игру из файла" << endl << "11 - 'Очистить текстовый файл'" << endl;
 }
 
 int main()
@@ -255,6 +255,13 @@ int main()
         cout << "Введите команду: ";
         }
         
+        if (komanda == "11"){
+        fstream clear_file("input1.txt", ios::out);
+        clear_file.close();
+        cout << "Готово" << endl;
+        cout << "Введите команду: ";
+        }
+        
         if (komanda == "9"){
             string path = "input1.txt";
             ofstream fout;
@@ -266,11 +273,10 @@ int main()
             {
          //       fout.write((char*)&kok, sizeof(kok));
                 int dlina = kok.size();
-                cout << dlina;
                 fout << dlina << endl;
                 for (int i = 0; i < dlina; ++i){
                     for (int j = 0; j < dlina; ++j){
-                        fout << get<0>(kok[i][j]) <<  ";" << get<1>(kok[i][j]) << ";" << get<2>(kok[i][j]) << ";" <<endl;
+                        fout << "X к.: " << j << ", Y к.: " << i << "    |" << get<0>(kok[i][j]) <<  ";" << get<1>(kok[i][j]) << ";" << get<2>(kok[i][j]) << ";" <<endl;
                     }
                 }
                 cout << "Файл успешно сохранён" << endl;
@@ -307,6 +313,10 @@ int main()
                         string text1_ , text2_, stroka;
                         getline(output, stroka);
                         for (int k = 0; k < stroka.size(); ++k){
+                            if (stroka[k] == '|'){
+                                obch.clear();
+                                continue;
+                            }
                             if (stroka[k] != ';'){
                                 obch.push_back(stroka[k]);
                             }
@@ -326,9 +336,7 @@ int main()
                                 }
                             }
                         }
-
                         kok_[i][j] = make_tuple(chislo_, text1_, text2_);
-
                         }
                 }
                 cout << "Файл успешно открыт" << endl;

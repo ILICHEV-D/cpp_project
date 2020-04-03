@@ -4,6 +4,8 @@
 #include <fstream>
 #include <iomanip>
 #include <tuple>
+#include <fstream>
+
 
 using namespace std;
 
@@ -163,7 +165,7 @@ void Game(const element_tablic& kok){  /// Начинает игру
 }
 
 void komandi(){  ///Выводит доступные команды
-        cout << "Выберите команду:" << endl << " 0 - 'Вывести список команд'" << endl << " 1 - 'Продолжить создавать разветвления'" << endl << " 2 - 'Добавить текст перехода из одной вершины в другую'" << endl << " 3 - 'Добавить текст при попадании на данную вершину'" << endl << " 4 - 'Завершить'" << endl << " 5 - 'Информация о вершине'" << endl << " 6 - 'Связать две вершины'" << endl << " 7 - 'Вывести таблицу'" << endl <<" 8 - 'Начать игру'" << endl;
+        cout << "Выберите команду:" << endl << " 0 - 'Вывести список команд'" << endl << " 1 - 'Продолжить создавать разветвления'" << endl << " 2 - 'Добавить текст перехода из одной вершины в другую'" << endl << " 3 - 'Добавить текст при попадании на данную вершину'" << endl << " 4 - 'Завершить'" << endl << " 5 - 'Информация о вершине'" << endl << " 6 - 'Связать две вершины'" << endl << " 7 - 'Вывести таблицу'" << endl <<" 8 - 'Начать игру'" << endl << " 9 - 'Сохранить'" << endl << "10 - 'Открыть игру из файла" << endl;
 }
 
 int main()
@@ -251,6 +253,87 @@ int main()
         add_new_vershina(kok);
         cout << "Готово" << endl;
         cout << "Введите команду: ";
+        }
+        
+        if (komanda == "9"){
+            string path = "input1.txt";
+            ofstream fout;
+            fout.open(path, ofstream::app);
+            if (!fout.is_open()){
+                cout << "Не найден файл" << endl;
+            }
+            else
+            {
+         //       fout.write((char*)&kok, sizeof(kok));
+                int dlina = kok.size();
+                cout << dlina;
+                fout << dlina << endl;
+                for (int i = 0; i < dlina; ++i){
+                    for (int j = 0; j < dlina; ++j){
+                        fout << get<0>(kok[i][j]) <<  ";" << get<1>(kok[i][j]) << ";" << get<2>(kok[i][j]) << ";" <<endl;
+                    }
+                }
+                cout << "Файл успешно сохранён" << endl;
+            }
+            fout.close();
+            
+        }
+        if (komanda == "10") {
+            element_tablic kok_;
+            string path = "input1.txt";
+            ifstream output;
+            output.open(path);
+            if (!output.is_open()){
+                cout << "Не найден файл" << endl;
+            }
+            else{
+
+                int kolich_vershin_;
+                output >> kolich_vershin;
+                
+                string stroka;
+                getline(output, stroka);
+
+                
+                kok_.resize(kolich_vershin);
+                for (int i = 0; i != kolich_vershin; ++i) {
+                    kok_[i].resize(kolich_vershin);
+                    string stroka;
+                        
+                    for (int j = 0; j != kolich_vershin; ++j) {
+                        int check_ = 0;
+                        int chislo_;
+                        string obch;
+                        string text1_ , text2_, stroka;
+                        getline(output, stroka);
+                        for (int k = 0; k < stroka.size(); ++k){
+                            if (stroka[k] != ';'){
+                                obch.push_back(stroka[k]);
+                            }
+                            else{
+                                check_ += 1;
+                                if (check_ == 1){
+                                    chislo_ = stoi(obch);
+                                    obch.clear();
+                                }
+                                if (check_ == 2){
+                                    text1_ = obch;
+                                    obch.clear();
+                                }
+                                if (check_ == 3){
+                                    text2_ = obch;
+                                    obch.clear();
+                                }
+                            }
+                        }
+
+                        kok_[i][j] = make_tuple(chislo_, text1_, text2_);
+
+                        }
+                }
+                cout << "Файл успешно открыт" << endl;
+            }
+            kok = kok_;
         }
     }
     return 0;

@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10.0)
+project(WORDS)
+set(CMAKE_CXX_STANDARD 17)
+add_executable(main.cpp test.cpp input1.txt input2.txt)
+enable_testing()
+add_test(test.cpp test.cpp)

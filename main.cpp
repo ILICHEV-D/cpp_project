@@ -5,7 +5,6 @@
 #include <iomanip>
 #include <tuple>
 #include <fstream>
-#include "Header.h"
 
 using namespace std;
 
@@ -243,9 +242,6 @@ element_tablic reading(element_tablic& kok_){
 
 int main()
 {
-    Test1();
-    Test2();
-    Test3();
 
     cout << "Сколько будет вершин?" << endl;
     cin >> kolich_vershin;

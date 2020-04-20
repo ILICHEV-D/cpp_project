@@ -1,0 +1,7 @@
+add_test( First [==[/Users/danililichev/Desktop/проект/cmake-build-debug/src/proj_test]==] First)
+set_tests_properties( First PROPERTIES WORKING_DIRECTORY [==[/Users/danililichev/Desktop/проект/cmake-build-debug/src]==])
+add_test( Second [==[/Users/danililichev/Desktop/проект/cmake-build-debug/src/proj_test]==] Second)
+set_tests_properties( Second PROPERTIES WORKING_DIRECTORY [==[/Users/danililichev/Desktop/проект/cmake-build-debug/src]==])
+add_test( Third [==[/Users/danililichev/Desktop/проект/cmake-build-debug/src/proj_test]==] Third)
+set_tests_properties( Third PROPERTIES WORKING_DIRECTORY [==[/Users/danililichev/Desktop/проект/cmake-build-debug/src]==])
+set( proj_test_TESTS First Second Third)

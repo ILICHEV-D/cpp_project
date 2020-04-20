@@ -1,4 +1,0 @@
-/Users/danililichev/Desktop/cpp_project/test/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/danililichev/Desktop/cpp_project/test/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/danililichev/Desktop/cpp_project/test/cmake-build-debug/CMakeFiles/test.dir
-/Users/danililichev/Desktop/cpp_project/test/cmake-build-debug/CMakeFiles/test.cpp.dir

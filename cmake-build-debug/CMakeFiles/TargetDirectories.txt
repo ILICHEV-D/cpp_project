@@ -1,0 +1,12 @@
+/Users/danililichev/Desktop/проект/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/danililichev/Desktop/проект/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/danililichev/Desktop/проект/cmake-build-debug/CMakeFiles/test.dir
+/Users/danililichev/Desktop/проект/cmake-build-debug/external/catch2/CMakeFiles/test.dir
+/Users/danililichev/Desktop/проект/cmake-build-debug/external/catch2/CMakeFiles/rebuild_cache.dir
+/Users/danililichev/Desktop/проект/cmake-build-debug/external/catch2/CMakeFiles/edit_cache.dir
+/Users/danililichev/Desktop/проект/cmake-build-debug/external/catch2/CMakeFiles/Catch2.dir
+/Users/danililichev/Desktop/проект/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
+/Users/danililichev/Desktop/проект/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+/Users/danililichev/Desktop/проект/cmake-build-debug/src/CMakeFiles/test.dir
+/Users/danililichev/Desktop/проект/cmake-build-debug/src/CMakeFiles/proj.dir
+/Users/danililichev/Desktop/проект/cmake-build-debug/src/CMakeFiles/proj_test.dir

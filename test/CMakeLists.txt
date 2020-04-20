@@ -1,6 +1,0 @@
-cmake_minimum_required(VERSION 3.10.0)
-project(WORDS)
-set(CMAKE_CXX_STANDARD 17)
-add_executable(test.cpp game.cpp test.cpp)
-enable_testing()
-add_test(test.cpp test.cpp)

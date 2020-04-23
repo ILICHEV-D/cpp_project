@@ -103,6 +103,7 @@
 			</Target>
 		</Build>
 		<Unit filename="/Users/danililichev/Desktop/test/src/game.cpp">
+			<Option target="proj"/>
 			<Option target="proj_test"/>
 		</Unit>
 		<Unit filename="/Users/danililichev/Desktop/test/src/main.cpp">

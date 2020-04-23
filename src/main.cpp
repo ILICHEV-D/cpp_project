@@ -11,8 +11,8 @@ using namespace std;
 
 typedef vector<vector<Vershina>> element_tablic; /// Тип данных для быстрого обращеня
 
-extern int posledn_elem_c1 = 0;
-extern int kolich_vershin = 0;
+extern int posledn_elem_c1;
+extern int kolich_vershin;
 
 int main()
 {

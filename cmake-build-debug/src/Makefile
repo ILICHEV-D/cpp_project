@@ -157,6 +157,7 @@ game.o: game.cpp.o
 
 # target to build an object file
 game.cpp.o:
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj.dir/build.make src/CMakeFiles/proj.dir/game.cpp.o
 	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj_test.dir/build.make src/CMakeFiles/proj_test.dir/game.cpp.o
 .PHONY : game.cpp.o
 
@@ -166,6 +167,7 @@ game.i: game.cpp.i
 
 # target to preprocess a source file
 game.cpp.i:
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj.dir/build.make src/CMakeFiles/proj.dir/game.cpp.i
 	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj_test.dir/build.make src/CMakeFiles/proj_test.dir/game.cpp.i
 .PHONY : game.cpp.i
 
@@ -175,6 +177,7 @@ game.s: game.cpp.s
 
 # target to generate assembly for a file
 game.cpp.s:
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj.dir/build.make src/CMakeFiles/proj.dir/game.cpp.s
 	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj_test.dir/build.make src/CMakeFiles/proj_test.dir/game.cpp.s
 .PHONY : game.cpp.s
 

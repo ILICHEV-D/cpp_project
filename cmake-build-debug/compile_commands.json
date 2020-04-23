@@ -11,6 +11,11 @@
 },
 {
   "directory": "/Users/danililichev/Desktop/test/cmake-build-debug/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=gnu++1z -o CMakeFiles/proj.dir/game.cpp.o -c /Users/danililichev/Desktop/test/src/game.cpp",
+  "file": "/Users/danililichev/Desktop/test/src/game.cpp"
+},
+{
+  "directory": "/Users/danililichev/Desktop/test/cmake-build-debug/src",
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=gnu++1z -o CMakeFiles/proj_test.dir/test.cpp.o -c /Users/danililichev/Desktop/test/src/test.cpp",
   "file": "/Users/danililichev/Desktop/test/src/test.cpp"
 },

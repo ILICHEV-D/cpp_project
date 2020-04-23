@@ -12,6 +12,20 @@ vector
 string
 -
 
+/Users/danililichev/Desktop/test/src/game.cpp
+Header.h
+/Users/danililichev/Desktop/test/src/Header.h
+iostream
+-
+vector
+-
+string
+-
+fstream
+-
+iomanip
+-
+
 /Users/danililichev/Desktop/test/src/main.cpp
 iostream
 -

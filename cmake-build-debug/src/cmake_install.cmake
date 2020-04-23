@@ -1,4 +1,4 @@
-# Install script for directory: /Users/danililichev/Desktop/проект/src
+# Install script for directory: /Users/danililichev/Desktop/test/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

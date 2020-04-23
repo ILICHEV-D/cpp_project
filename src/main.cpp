@@ -5,15 +5,14 @@
 #include <iomanip>
 #include <tuple>
 #include <fstream>
-#include "game.cpp"
+#include "Header.h"
 
 using namespace std;
 
-//#include "Header.h"
-
-
 typedef vector<vector<Vershina>> element_tablic; /// Тип данных для быстрого обращеня
 
+extern int posledn_elem_c1 = 0;
+extern int kolich_vershin = 0;
 
 int main()
 {

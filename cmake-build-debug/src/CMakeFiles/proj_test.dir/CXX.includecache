@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/danililichev/Desktop/проект/src/Header.h
+/Users/danililichev/Desktop/test/src/Header.h
 vector
 -
 string
 -
 
-/Users/danililichev/Desktop/проект/src/catch.hpp
+/Users/danililichev/Desktop/test/src/catch.hpp
 TargetConditionals.h
 -
 ciso646
@@ -384,7 +384,7 @@ string
 memory
 -
 Foundation/Foundation.h
-/Users/danililichev/Desktop/проект/src/Foundation/Foundation.h
+/Users/danililichev/Desktop/test/src/Foundation/Foundation.h
 limits
 -
 set
@@ -586,9 +586,9 @@ algorithm
 cassert
 -
 
-/Users/danililichev/Desktop/проект/src/game.cpp
+/Users/danililichev/Desktop/test/src/game.cpp
 Header.h
-/Users/danililichev/Desktop/проект/src/Header.h
+/Users/danililichev/Desktop/test/src/Header.h
 iostream
 -
 vector
@@ -600,15 +600,15 @@ fstream
 iomanip
 -
 
-/Users/danililichev/Desktop/проект/src/test.cpp
+/Users/danililichev/Desktop/test/src/test.cpp
 Header.h
-/Users/danililichev/Desktop/проект/src/Header.h
+/Users/danililichev/Desktop/test/src/Header.h
 iostream
 -
 cassert
 -
 catch.hpp
-/Users/danililichev/Desktop/проект/src/catch.hpp
+/Users/danililichev/Desktop/test/src/catch.hpp
 string
 -
 random

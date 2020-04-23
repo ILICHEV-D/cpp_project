@@ -9,6 +9,7 @@ extern struct Vershina{int chislo;string text1;string text2;};
 
 typedef vector<vector<Vershina>> element_tablic;
 
+extern bool error();
 extern void VivodTabl(element_tablic& kok);
 extern void Nachalo(int ishodnoe_polozh, element_tablic& kok);
 extern void Prodol(int ishodnoe_polozh, element_tablic& kok);

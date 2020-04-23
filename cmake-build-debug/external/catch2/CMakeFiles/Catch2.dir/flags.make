@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/Ma
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/danililichev/Desktop/проект/external/catch2 
+CXX_INCLUDES = -I/Users/danililichev/Desktop/test/external/catch2 
 

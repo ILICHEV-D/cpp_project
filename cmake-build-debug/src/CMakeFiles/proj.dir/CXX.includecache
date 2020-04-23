@@ -6,27 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/danililichev/Desktop/проект/src/Header.h
+/Users/danililichev/Desktop/test/src/Header.h
 vector
 -
 string
 -
 
-/Users/danililichev/Desktop/проект/src/game.cpp
-Header.h
-/Users/danililichev/Desktop/проект/src/Header.h
-iostream
--
-vector
--
-string
--
-fstream
--
-iomanip
--
-
-/Users/danililichev/Desktop/проект/src/main.cpp
+/Users/danililichev/Desktop/test/src/main.cpp
 iostream
 -
 vector
@@ -41,6 +27,6 @@ tuple
 -
 fstream
 -
-game.cpp
-/Users/danililichev/Desktop/проект/src/game.cpp
+Header.h
+/Users/danililichev/Desktop/test/src/Header.h
 

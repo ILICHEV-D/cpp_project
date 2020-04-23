@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/danililichev/Desktop/проект
+CMAKE_SOURCE_DIR = /Users/danililichev/Desktop/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/danililichev/Desktop/проект/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/danililichev/Desktop/test/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,14 +91,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/danililichev/Desktop/проект/cmake-build-debug/CMakeFiles /Users/danililichev/Desktop/проект/cmake-build-debug/src/CMakeFiles/progress.marks
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danililichev/Desktop/проект/cmake-build-debug/CMakeFiles 0
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/danililichev/Desktop/test/cmake-build-debug/CMakeFiles /Users/danililichev/Desktop/test/cmake-build-debug/src/CMakeFiles/progress.marks
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danililichev/Desktop/test/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +108,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/proj.dir/rule:
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/proj.dir/rule
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/proj.dir/rule
 .PHONY : src/CMakeFiles/proj.dir/rule
 
 # Convenience name for target.
@@ -133,12 +133,12 @@ proj: src/CMakeFiles/proj.dir/rule
 
 # fast build rule for target.
 proj/fast:
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj.dir/build.make src/CMakeFiles/proj.dir/build
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj.dir/build.make src/CMakeFiles/proj.dir/build
 .PHONY : proj/fast
 
 # Convenience name for target.
 src/CMakeFiles/proj_test.dir/rule:
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/proj_test.dir/rule
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/proj_test.dir/rule
 .PHONY : src/CMakeFiles/proj_test.dir/rule
 
 # Convenience name for target.
@@ -148,7 +148,7 @@ proj_test: src/CMakeFiles/proj_test.dir/rule
 
 # fast build rule for target.
 proj_test/fast:
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj_test.dir/build.make src/CMakeFiles/proj_test.dir/build
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj_test.dir/build.make src/CMakeFiles/proj_test.dir/build
 .PHONY : proj_test/fast
 
 game.o: game.cpp.o
@@ -157,7 +157,7 @@ game.o: game.cpp.o
 
 # target to build an object file
 game.cpp.o:
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj_test.dir/build.make src/CMakeFiles/proj_test.dir/game.cpp.o
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj_test.dir/build.make src/CMakeFiles/proj_test.dir/game.cpp.o
 .PHONY : game.cpp.o
 
 game.i: game.cpp.i
@@ -166,7 +166,7 @@ game.i: game.cpp.i
 
 # target to preprocess a source file
 game.cpp.i:
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj_test.dir/build.make src/CMakeFiles/proj_test.dir/game.cpp.i
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj_test.dir/build.make src/CMakeFiles/proj_test.dir/game.cpp.i
 .PHONY : game.cpp.i
 
 game.s: game.cpp.s
@@ -175,7 +175,7 @@ game.s: game.cpp.s
 
 # target to generate assembly for a file
 game.cpp.s:
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj_test.dir/build.make src/CMakeFiles/proj_test.dir/game.cpp.s
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj_test.dir/build.make src/CMakeFiles/proj_test.dir/game.cpp.s
 .PHONY : game.cpp.s
 
 main.o: main.cpp.o
@@ -184,7 +184,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj.dir/build.make src/CMakeFiles/proj.dir/main.cpp.o
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj.dir/build.make src/CMakeFiles/proj.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -193,7 +193,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj.dir/build.make src/CMakeFiles/proj.dir/main.cpp.i
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj.dir/build.make src/CMakeFiles/proj.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -202,7 +202,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj.dir/build.make src/CMakeFiles/proj.dir/main.cpp.s
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj.dir/build.make src/CMakeFiles/proj.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 test.o: test.cpp.o
@@ -211,7 +211,7 @@ test.o: test.cpp.o
 
 # target to build an object file
 test.cpp.o:
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj_test.dir/build.make src/CMakeFiles/proj_test.dir/test.cpp.o
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj_test.dir/build.make src/CMakeFiles/proj_test.dir/test.cpp.o
 .PHONY : test.cpp.o
 
 test.i: test.cpp.i
@@ -220,7 +220,7 @@ test.i: test.cpp.i
 
 # target to preprocess a source file
 test.cpp.i:
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj_test.dir/build.make src/CMakeFiles/proj_test.dir/test.cpp.i
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj_test.dir/build.make src/CMakeFiles/proj_test.dir/test.cpp.i
 .PHONY : test.cpp.i
 
 test.s: test.cpp.s
@@ -229,7 +229,7 @@ test.s: test.cpp.s
 
 # target to generate assembly for a file
 test.cpp.s:
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj_test.dir/build.make src/CMakeFiles/proj_test.dir/test.cpp.s
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f src/CMakeFiles/proj_test.dir/build.make src/CMakeFiles/proj_test.dir/test.cpp.s
 .PHONY : test.cpp.s
 
 # Help Target
@@ -263,6 +263,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/danililichev/Desktop/проект/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

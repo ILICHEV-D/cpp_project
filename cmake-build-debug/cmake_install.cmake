@@ -1,4 +1,4 @@
-# Install script for directory: /Users/danililichev/Desktop/проект
+# Install script for directory: /Users/danililichev/Desktop/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/danililichev/Desktop/проект/cmake-build-debug/external/catch2/cmake_install.cmake")
-  include("/Users/danililichev/Desktop/проект/cmake-build-debug/src/cmake_install.cmake")
+  include("/Users/danililichev/Desktop/test/cmake-build-debug/external/catch2/cmake_install.cmake")
+  include("/Users/danililichev/Desktop/test/cmake-build-debug/src/cmake_install.cmake")
 
 endif()
 
@@ -47,5 +47,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/danililichev/Desktop/проект/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/danililichev/Desktop/test/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

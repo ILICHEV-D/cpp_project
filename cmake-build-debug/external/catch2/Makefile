@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/danililichev/Desktop/test
+CMAKE_SOURCE_DIR = "/Users/danililichev/Desktop/cpp_project — копия 3"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/danililichev/Desktop/test/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,14 +91,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/danililichev/Desktop/test/cmake-build-debug/CMakeFiles /Users/danililichev/Desktop/test/cmake-build-debug/external/catch2/CMakeFiles/progress.marks
-	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 external/catch2/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danililichev/Desktop/test/cmake-build-debug/CMakeFiles 0
+	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/CMakeFiles" "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/external/catch2/CMakeFiles/progress.marks"
+	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 external/catch2/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 external/catch2/clean
+	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 external/catch2/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +108,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 external/catch2/preinstall
+	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 external/catch2/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 external/catch2/preinstall
+	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 external/catch2/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 external/catch2/CMakeFiles/Catch2.dir/rule:
-	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 external/catch2/CMakeFiles/Catch2.dir/rule
+	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 external/catch2/CMakeFiles/Catch2.dir/rule
 .PHONY : external/catch2/CMakeFiles/Catch2.dir/rule
 
 # Convenience name for target.
@@ -133,7 +133,7 @@ Catch2: external/catch2/CMakeFiles/Catch2.dir/rule
 
 # fast build rule for target.
 Catch2/fast:
-	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f external/catch2/CMakeFiles/Catch2.dir/build.make external/catch2/CMakeFiles/Catch2.dir/build
+	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug" && $(MAKE) -f external/catch2/CMakeFiles/Catch2.dir/build.make external/catch2/CMakeFiles/Catch2.dir/build
 .PHONY : Catch2/fast
 
 catch.o: catch.cpp.o
@@ -142,7 +142,7 @@ catch.o: catch.cpp.o
 
 # target to build an object file
 catch.cpp.o:
-	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f external/catch2/CMakeFiles/Catch2.dir/build.make external/catch2/CMakeFiles/Catch2.dir/catch.cpp.o
+	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug" && $(MAKE) -f external/catch2/CMakeFiles/Catch2.dir/build.make external/catch2/CMakeFiles/Catch2.dir/catch.cpp.o
 .PHONY : catch.cpp.o
 
 catch.i: catch.cpp.i
@@ -151,7 +151,7 @@ catch.i: catch.cpp.i
 
 # target to preprocess a source file
 catch.cpp.i:
-	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f external/catch2/CMakeFiles/Catch2.dir/build.make external/catch2/CMakeFiles/Catch2.dir/catch.cpp.i
+	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug" && $(MAKE) -f external/catch2/CMakeFiles/Catch2.dir/build.make external/catch2/CMakeFiles/Catch2.dir/catch.cpp.i
 .PHONY : catch.cpp.i
 
 catch.s: catch.cpp.s
@@ -160,7 +160,7 @@ catch.s: catch.cpp.s
 
 # target to generate assembly for a file
 catch.cpp.s:
-	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(MAKE) -f external/catch2/CMakeFiles/Catch2.dir/build.make external/catch2/CMakeFiles/Catch2.dir/catch.cpp.s
+	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug" && $(MAKE) -f external/catch2/CMakeFiles/Catch2.dir/build.make external/catch2/CMakeFiles/Catch2.dir/catch.cpp.s
 .PHONY : catch.cpp.s
 
 # Help Target
@@ -187,6 +187,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/danililichev/Desktop/test/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

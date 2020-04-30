@@ -14,10 +14,24 @@ typedef vector<vector<Vershina>> element_tablic; /// Тип данных для 
 extern int posledn_elem_c1;
 extern int kolich_vershin;
 
-int main()
-{
+int main() {
     cout << "Сколько будет вершин?" << endl;
     cin >> kolich_vershin;
+
+    if (cin.fail()) {
+        cout << "Вы ввели не число, начните заного";
+        exit(0);
+    }
+    while (kolich_vershin <= 0) {
+        cerr << "Вершин не может быть меньше 1" << endl;
+        cerr << "Введите число заного: ";
+        cin >> kolich_vershin;
+        if (cin.fail()) {
+            cout << "Вы ввели не число, начните заного";
+            exit(0);
+        };
+    }
+
     element_tablic kok;
     kok.resize(kolich_vershin);
     for (int i = 0; i != kolich_vershin; ++i) {
@@ -33,16 +47,29 @@ int main()
 
     komandi();
     int chetchik = 1;
-    while (chetchik != 0){
+    while (chetchik != 0) {
         string komanda;
         getline(cin, komanda);
+
+
+        if (komanda != "") {
+            while (!IsNumber(komanda) || (stoi(komanda) < 0) || (stoi(komanda)) > 10) {
+                cerr << "Вы ввели неправильное число" << endl;
+                cerr << "Введите еще раз: ";
+                cin >> komanda;
+            }
+        }
+
         if (komanda == "1") {
             cout << "Введите номер начала развилки: ";
-            int nomer;
-            cin >> nomer;
 
+            int nomer;
+
+            cin >> nomer;
+            error_(nomer);
             bool check = error();
-            if (check == true){continue;}
+            if (check == true) { continue; }
+
 
             Prodol(nomer, kok);
             VivodTabl(kok);
@@ -57,13 +84,15 @@ int main()
             cout << "Введите номер вершины из которой выходит герой(см. по Y): ";
             int nomer1;
             cin >> nomer1;
+            error_(nomer1);
             bool check1 = error();
-            if (check1 == true){continue;}
+            if (check1 == true) { continue; }
             cout << "Введите номер вершины в которую входит герой(см. по X): ";
             int nomer2;
             cin >> nomer2;
+            error_(nomer2);
             bool check2 = error();
-            if (check2 == true){continue;}
+            if (check2 == true) { continue; }
             string new_text;
             getline(cin, new_text);
             cout << "Введите текст: ";
@@ -82,8 +111,9 @@ int main()
             cout << "Введите номер вершины из которой выходит герой (см. по Y): ";
             int nomer;
             cin >> nomer;
+            error_(nomer);
             bool check1 = error();
-            if (check1 == true){continue;}
+            if (check1 == true) { continue; }
             cout << "Введите текст: ";
             string text;
             getline(cin, text);
@@ -104,40 +134,36 @@ int main()
             cout << "Введите команду: ";
         }
 
-        if (komanda == "0"){
+        if (komanda == "0") {
             komandi();
             cout << "Введите команду: ";
         }
 
-        if (komanda == "6"){
+        if (komanda == "6") {
             cout << "Введите значение элемента по Х:";
             int x;
             cin >> x;
+            error_(x);
             bool check1 = error();
-            if (check1 == true){continue;}
+            if (check1 == true) { continue; }
             cout << "Введите значение элемента по Y:";
             int y;
             cin >> y;
+            error_(y);
             bool check2 = error();
-            if (check2 == true){continue;}
+            if (check2 == true) { continue; }
             add_new_vershina(kok, x, y);
             cout << "Готово" << endl;
             cout << "Введите команду: ";
         }
 
-        if (komanda == "11"){
-            fstream clear_file("input1.txt", ios::out);
-            clear_file.close();
-            cout << "Готово" << endl;
-            cout << "Введите команду: ";
-        }
-
-        if (komanda == "9"){
+        if (komanda == "9") {
             writing(kok);
         }
         if (komanda == "10") {
             element_tablic kok_;
-            kok = reading(kok_);
+            kok = reading(kok_, kok);
+            komandi();
         }
     }
     return 0;

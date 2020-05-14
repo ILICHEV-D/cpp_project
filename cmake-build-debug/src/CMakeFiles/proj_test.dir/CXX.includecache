@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/danililichev/Desktop/cpp_project — копия 3/src/Header.h
+/Users/danililichev/Downloads/cpp_project-master/src/Header.h
 vector
 -
 string
 -
 
-/Users/danililichev/Desktop/cpp_project — копия 3/src/catch.hpp
+/Users/danililichev/Downloads/cpp_project-master/src/catch.hpp
 TargetConditionals.h
 -
 ciso646
@@ -384,7 +384,7 @@ string
 memory
 -
 Foundation/Foundation.h
-/Users/danililichev/Desktop/cpp_project — копия 3/src/Foundation/Foundation.h
+/Users/danililichev/Downloads/cpp_project-master/src/Foundation/Foundation.h
 limits
 -
 set
@@ -586,29 +586,15 @@ algorithm
 cassert
 -
 
-/Users/danililichev/Desktop/cpp_project — копия 3/src/game.cpp
+/Users/danililichev/Downloads/cpp_project-master/src/test.cpp
 Header.h
-/Users/danililichev/Desktop/cpp_project — копия 3/src/Header.h
-iostream
--
-vector
--
-string
--
-fstream
--
-iomanip
--
-
-/Users/danililichev/Desktop/cpp_project — копия 3/src/test.cpp
-Header.h
-/Users/danililichev/Desktop/cpp_project — копия 3/src/Header.h
+/Users/danililichev/Downloads/cpp_project-master/src/Header.h
 iostream
 -
 cassert
 -
 catch.hpp
-/Users/danililichev/Desktop/cpp_project — копия 3/src/catch.hpp
+/Users/danililichev/Downloads/cpp_project-master/src/catch.hpp
 string
 -
 random

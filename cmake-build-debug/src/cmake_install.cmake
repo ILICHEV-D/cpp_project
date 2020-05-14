@@ -1,4 +1,4 @@
-# Install script for directory: /Users/danililichev/Desktop/cpp_project — копия 3/src
+# Install script for directory: /Users/danililichev/Downloads/cpp_project-master/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/danililichev/Desktop/cpp_project — копия 3"
+CMAKE_SOURCE_DIR = /Users/danililichev/Downloads/cpp_project-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug"
+CMAKE_BINARY_DIR = /Users/danililichev/Downloads/cpp_project-master/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,9 +91,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/CMakeFiles" "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/CMakeFiles /Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

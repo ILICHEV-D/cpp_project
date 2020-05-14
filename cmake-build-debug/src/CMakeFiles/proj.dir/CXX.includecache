@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/danililichev/Desktop/cpp_project — копия 3/src/Header.h
+/Users/danililichev/Downloads/cpp_project-master/src/Header.h
 vector
 -
 string
 -
 
-/Users/danililichev/Desktop/cpp_project — копия 3/src/game.cpp
+/Users/danililichev/Downloads/cpp_project-master/src/game.cpp
 Header.h
-/Users/danililichev/Desktop/cpp_project — копия 3/src/Header.h
+/Users/danililichev/Downloads/cpp_project-master/src/Header.h
 iostream
 -
 vector
@@ -26,7 +26,7 @@ fstream
 iomanip
 -
 
-/Users/danililichev/Desktop/cpp_project — копия 3/src/main.cpp
+/Users/danililichev/Downloads/cpp_project-master/src/main.cpp
 iostream
 -
 vector
@@ -42,5 +42,5 @@ tuple
 fstream
 -
 Header.h
-/Users/danililichev/Desktop/cpp_project — копия 3/src/Header.h
+/Users/danililichev/Downloads/cpp_project-master/src/Header.h
 

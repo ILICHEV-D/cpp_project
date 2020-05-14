@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/danililichev/Desktop/cpp_project — копия 3"
+CMAKE_SOURCE_DIR = /Users/danililichev/Downloads/cpp_project-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug"
+CMAKE_BINARY_DIR = /Users/danililichev/Downloads/cpp_project-master/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/proj_test.dir/depend.make
@@ -59,29 +59,29 @@ include src/CMakeFiles/proj_test.dir/flags.make
 
 src/CMakeFiles/proj_test.dir/test.cpp.o: src/CMakeFiles/proj_test.dir/flags.make
 src/CMakeFiles/proj_test.dir/test.cpp.o: ../src/test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/proj_test.dir/test.cpp.o"
-	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj_test.dir/test.cpp.o -c "/Users/danililichev/Desktop/cpp_project — копия 3/src/test.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/proj_test.dir/test.cpp.o"
+	cd /Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj_test.dir/test.cpp.o -c /Users/danililichev/Downloads/cpp_project-master/src/test.cpp
 
 src/CMakeFiles/proj_test.dir/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj_test.dir/test.cpp.i"
-	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/danililichev/Desktop/cpp_project — копия 3/src/test.cpp" > CMakeFiles/proj_test.dir/test.cpp.i
+	cd /Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/danililichev/Downloads/cpp_project-master/src/test.cpp > CMakeFiles/proj_test.dir/test.cpp.i
 
 src/CMakeFiles/proj_test.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj_test.dir/test.cpp.s"
-	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/danililichev/Desktop/cpp_project — копия 3/src/test.cpp" -o CMakeFiles/proj_test.dir/test.cpp.s
+	cd /Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/danililichev/Downloads/cpp_project-master/src/test.cpp -o CMakeFiles/proj_test.dir/test.cpp.s
 
 src/CMakeFiles/proj_test.dir/game.cpp.o: src/CMakeFiles/proj_test.dir/flags.make
 src/CMakeFiles/proj_test.dir/game.cpp.o: ../src/game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/proj_test.dir/game.cpp.o"
-	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj_test.dir/game.cpp.o -c "/Users/danililichev/Desktop/cpp_project — копия 3/src/game.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/proj_test.dir/game.cpp.o"
+	cd /Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/proj_test.dir/game.cpp.o -c /Users/danililichev/Downloads/cpp_project-master/src/game.cpp
 
 src/CMakeFiles/proj_test.dir/game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj_test.dir/game.cpp.i"
-	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/danililichev/Desktop/cpp_project — копия 3/src/game.cpp" > CMakeFiles/proj_test.dir/game.cpp.i
+	cd /Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/danililichev/Downloads/cpp_project-master/src/game.cpp > CMakeFiles/proj_test.dir/game.cpp.i
 
 src/CMakeFiles/proj_test.dir/game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj_test.dir/game.cpp.s"
-	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/src" && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/danililichev/Desktop/cpp_project — копия 3/src/game.cpp" -o CMakeFiles/proj_test.dir/game.cpp.s
+	cd /Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/danililichev/Downloads/cpp_project-master/src/game.cpp -o CMakeFiles/proj_test.dir/game.cpp.s
 
 # Object files for target proj_test
 proj_test_OBJECTS = \
@@ -95,9 +95,9 @@ src/proj_test: src/CMakeFiles/proj_test.dir/test.cpp.o
 src/proj_test: src/CMakeFiles/proj_test.dir/game.cpp.o
 src/proj_test: src/CMakeFiles/proj_test.dir/build.make
 src/proj_test: src/CMakeFiles/proj_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable proj_test"
-	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/src" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/proj_test.dir/link.txt --verbose=$(VERBOSE)
-	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/src" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -D TEST_TARGET=proj_test -D "TEST_EXECUTABLE=/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/src/proj_test" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/src" -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=proj_test_TESTS -D "CTEST_FILE=/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/src/proj_test_tests-b858cb2.cmake" -P "/Users/danililichev/Desktop/cpp_project — копия 3/cmake/CatchAddTests.cmake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable proj_test"
+	cd /Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/proj_test.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/src && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -D TEST_TARGET=proj_test -D TEST_EXECUTABLE=/Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/src/proj_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/src -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=proj_test_TESTS -D CTEST_FILE=/Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/src/proj_test_tests-b858cb2.cmake -P /Users/danililichev/Downloads/cpp_project-master/cmake/CatchAddTests.cmake
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/proj_test.dir/build: src/proj_test
@@ -105,10 +105,10 @@ src/CMakeFiles/proj_test.dir/build: src/proj_test
 .PHONY : src/CMakeFiles/proj_test.dir/build
 
 src/CMakeFiles/proj_test.dir/clean:
-	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/src" && $(CMAKE_COMMAND) -P CMakeFiles/proj_test.dir/cmake_clean.cmake
+	cd /Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/proj_test.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/proj_test.dir/clean
 
 src/CMakeFiles/proj_test.dir/depend:
-	cd "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/danililichev/Desktop/cpp_project — копия 3" "/Users/danililichev/Desktop/cpp_project — копия 3/src" "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug" "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/src" "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/src/CMakeFiles/proj_test.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /Users/danililichev/Downloads/cpp_project-master/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/danililichev/Downloads/cpp_project-master /Users/danililichev/Downloads/cpp_project-master/src /Users/danililichev/Downloads/cpp_project-master/cmake-build-debug /Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/src /Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/src/CMakeFiles/proj_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/proj_test.dir/depend
 

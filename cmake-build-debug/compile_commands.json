@@ -1,27 +1,27 @@
 [
 {
-  "directory": "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/external/catch2",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I\"/Users/danililichev/Desktop/cpp_project — копия 3/external/catch2\"  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Catch2.dir/catch.cpp.o -c \"/Users/danililichev/Desktop/cpp_project — копия 3/external/catch2/catch.cpp\"",
-  "file": "/Users/danililichev/Desktop/cpp_project — копия 3/external/catch2/catch.cpp"
+  "directory": "/Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/external/catch2",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I/Users/danililichev/Downloads/cpp_project-master/external/catch2  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/Catch2.dir/catch.cpp.o -c /Users/danililichev/Downloads/cpp_project-master/external/catch2/catch.cpp",
+  "file": "/Users/danililichev/Downloads/cpp_project-master/external/catch2/catch.cpp"
 },
 {
-  "directory": "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/src",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=gnu++1z -o CMakeFiles/proj.dir/main.cpp.o -c \"/Users/danililichev/Desktop/cpp_project — копия 3/src/main.cpp\"",
-  "file": "/Users/danililichev/Desktop/cpp_project — копия 3/src/main.cpp"
+  "directory": "/Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=gnu++1z -o CMakeFiles/proj.dir/main.cpp.o -c /Users/danililichev/Downloads/cpp_project-master/src/main.cpp",
+  "file": "/Users/danililichev/Downloads/cpp_project-master/src/main.cpp"
 },
 {
-  "directory": "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/src",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=gnu++1z -o CMakeFiles/proj.dir/game.cpp.o -c \"/Users/danililichev/Desktop/cpp_project — копия 3/src/game.cpp\"",
-  "file": "/Users/danililichev/Desktop/cpp_project — копия 3/src/game.cpp"
+  "directory": "/Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=gnu++1z -o CMakeFiles/proj.dir/game.cpp.o -c /Users/danililichev/Downloads/cpp_project-master/src/game.cpp",
+  "file": "/Users/danililichev/Downloads/cpp_project-master/src/game.cpp"
 },
 {
-  "directory": "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/src",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=gnu++1z -o CMakeFiles/proj_test.dir/test.cpp.o -c \"/Users/danililichev/Desktop/cpp_project — копия 3/src/test.cpp\"",
-  "file": "/Users/danililichev/Desktop/cpp_project — копия 3/src/test.cpp"
+  "directory": "/Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=gnu++1z -o CMakeFiles/proj_test.dir/test.cpp.o -c /Users/danililichev/Downloads/cpp_project-master/src/test.cpp",
+  "file": "/Users/danililichev/Downloads/cpp_project-master/src/test.cpp"
 },
 {
-  "directory": "/Users/danililichev/Desktop/cpp_project — копия 3/cmake-build-debug/src",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=gnu++1z -o CMakeFiles/proj_test.dir/game.cpp.o -c \"/Users/danililichev/Desktop/cpp_project — копия 3/src/game.cpp\"",
-  "file": "/Users/danililichev/Desktop/cpp_project — копия 3/src/game.cpp"
+  "directory": "/Users/danililichev/Downloads/cpp_project-master/cmake-build-debug/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=gnu++1z -o CMakeFiles/proj_test.dir/game.cpp.o -c /Users/danililichev/Downloads/cpp_project-master/src/game.cpp",
+  "file": "/Users/danililichev/Downloads/cpp_project-master/src/game.cpp"
 }
 ]

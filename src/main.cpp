@@ -11,10 +11,10 @@ using namespace std;
 
 typedef vector<vector<Vershina>> element_tablic; /// Тип данных для быстрого обращеня
 
-extern int posledn_elem_c1;
-extern int kolich_vershin;
 
 int main() {
+    int posledn_elem_c1 = 0;
+    int kolich_vershin = 0;
     cout << "Сколько будет вершин?" << endl;
     cin >> kolich_vershin;
 
@@ -42,8 +42,8 @@ int main() {
         }
     }
 
-    Nachalo(1, kok);
-    VivodTabl(kok);
+    Nachalo(1, kok, posledn_elem_c1, kolich_vershin);
+    VivodTabl(kok, kolich_vershin);
 
     komandi();
     int chetchik = 1;
@@ -66,13 +66,13 @@ int main() {
             int nomer;
 
             cin >> nomer;
-            error_(nomer);
+            error_(nomer, kolich_vershin);
             bool check = error();
             if (check == true) { continue; }
 
 
-            Prodol(nomer, kok);
-            VivodTabl(kok);
+            Prodol(nomer, kok, posledn_elem_c1, kolich_vershin);
+            VivodTabl(kok, kolich_vershin);
             cout << "Введите команду: ";
         }
 
@@ -82,15 +82,15 @@ int main() {
 
         if (komanda == "2") {
             cout << "Введите номер вершины из которой выходит герой(см. по Y): ";
-            int nomer1;
-            cin >> nomer1;
-            error_(nomer1);
+
+            int nomer1 = VvodChislaPolsovat(kolich_vershin);
+
             bool check1 = error();
             if (check1 == true) { continue; }
             cout << "Введите номер вершины в которую входит герой(см. по X): ";
-            int nomer2;
-            cin >> nomer2;
-            error_(nomer2);
+
+            int nomer2 = VvodChislaPolsovat(kolich_vershin);
+
             bool check2 = error();
             if (check2 == true) { continue; }
             string new_text;
@@ -98,39 +98,35 @@ int main() {
             cout << "Введите текст: ";
             cin >> new_text;
             Dobavit_text1(nomer1, nomer2, kok, new_text);
-            cout << "Готово" << endl;
-            cout << "Введите команду: ";
+            TextNovoiKomandi();
         }
 
         if (komanda == "5") {
-            infa_element(kok);
-            cout << "Готово" << endl;
-            cout << "Введите команду: ";
+            infa_element(kok, kolich_vershin);
+            TextNovoiKomandi();
         }
         if (komanda == "3") {
             cout << "Введите номер вершины из которой выходит герой (см. по Y): ";
-            int nomer;
-            cin >> nomer;
-            error_(nomer);
+
+            int nomer = VvodChislaPolsovat(kolich_vershin);
+
             bool check1 = error();
             if (check1 == true) { continue; }
             cout << "Введите текст: ";
             string text;
             getline(cin, text);
             cin >> text;
-            text_pri_popad_na_versh(kok, nomer, text);
-            cout << "Готово" << endl;
-            cout << "Введите команду: ";
+            text_pri_popad_na_versh(kok, nomer, text, kolich_vershin);
+            TextNovoiKomandi();
         }
 
         if (komanda == "8") {
-            Game(kok);
-            cout << "Готово" << endl;
-            cout << "Введите команду: ";
+            Game(kok, kolich_vershin);
+            TextNovoiKomandi();
         }
 
         if (komanda == "7") {
-            VivodTabl(kok);
+            VivodTabl(kok, kolich_vershin);
             cout << "Введите команду: ";
         }
 
@@ -141,20 +137,19 @@ int main() {
 
         if (komanda == "6") {
             cout << "Введите значение элемента по Х:";
-            int x;
-            cin >> x;
-            error_(x);
+
+            int x = VvodChislaPolsovat(kolich_vershin);
+
             bool check1 = error();
             if (check1 == true) { continue; }
             cout << "Введите значение элемента по Y:";
-            int y;
-            cin >> y;
-            error_(y);
+
+            int y = VvodChislaPolsovat(kolich_vershin);
+
             bool check2 = error();
             if (check2 == true) { continue; }
             add_new_vershina(kok, x, y);
-            cout << "Готово" << endl;
-            cout << "Введите команду: ";
+            TextNovoiKomandi();
         }
 
         if (komanda == "9") {
@@ -162,7 +157,7 @@ int main() {
         }
         if (komanda == "10") {
             element_tablic kok_;
-            kok = reading(kok_, kok);
+            kok = reading(kok_, kok, kolich_vershin);
             komandi();
         }
     }

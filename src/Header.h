@@ -37,7 +37,7 @@ extern void Game(const element_tablic &kok, int &kolich_vershin); /// Начин
 
 extern bool IsNumber(const string &s); /// Находит в строке числа
 
-extern tuple<bool, int> VvodChislaPolsovat(int &kolich_vershin);
+extern tuple<bool, int> VvodChislaPolsovat(int &kolich_vershin); /// Возвращает ошибку пользователю, если указана несуществующая вершина
 
 extern void komandi(); ///Выводит доступные команды
 

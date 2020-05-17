@@ -32,15 +32,19 @@ bool EqualFile(string name1, string name2) {
 
 
 TEST_CASE("First") { //разветвление
-    char newline = '\n';
     const string way = "input1.txt";
     ofstream fout(way);
     fout
-            << R"(3)" << newline << R"(X к.: 0, Y к.: 0    |0; ;Hello.;)" << newline
-            << R"(X к.: 1, Y к.: 0    |1;love;Hello.;)" << newline << R"(X к.: 2, Y к.: 0    |1;death;Hello.;)"
-            << newline << R"(X к.: 0, Y к.: 1    |0; ;WIN;)" << newline << R"(X к.: 1, Y к.: 1    |0; ;WIN;)" << newline
-            << R"(X к.: 2, Y к.: 1    |0; ;WIN;)" << newline << R"(X к.: 0, Y к.: 2    |0; ;LOSE;)" << newline
-            << R"(X к.: 1, Y к.: 2    |0; ;LOSE;)" << newline << R"(X к.: 2, Y к.: 2    |0; ;LOSE;)"
+            << R"(3
+X к.: 0, Y к.: 0    |0; ;Hello.;
+X к.: 1, Y к.: 0    |1;love;Hello.;
+X к.: 2, Y к.: 0    |1;death;Hello.;
+X к.: 0, Y к.: 1    |0; ;WIN;
+X к.: 1, Y к.: 1    |0; ;WIN;
+X к.: 2, Y к.: 1    |0; ;WIN;
+X к.: 0, Y к.: 2    |0; ;LOSE;
+X к.: 1, Y к.: 2    |0; ;LOSE;
+X к.: 2, Y к.: 2    |0; ;LOSE;)"
             << endl;
 
     element_tablic kok1_, kok1;
@@ -54,12 +58,18 @@ TEST_CASE("First") { //разветвление
     ofstream fout_;
     fout_.open(path_);
     fout_
-            << R"(3)" << newline << R"(X к.: 0, Y к.: 0    |0; ;Hello.;)" << newline
-            << R"(X к.: 1, Y к.: 0    |1;YES;Hello.;)" << newline << R"(X к.: 2, Y к.: 0    |1;death;Hello.;)"
-            << newline << R"(X к.: 0, Y к.: 1    |0; ;WIN;)" << newline << R"(X к.: 1, Y к.: 1    |0; ;WIN;)" << newline
-            << R"(X к.: 2, Y к.: 1    |0; ;WIN;)" << newline << R"(X к.: 0, Y к.: 2    |0; ;LOSE;)" << newline
-            << R"(X к.: 1, Y к.: 2    |0; ;LOSE;)" << newline << R"(X к.: 2, Y к.: 2    |0; ;LOSE;)"
+            << R"(3
+X к.: 0, Y к.: 0    |0; ;Hello.;
+X к.: 1, Y к.: 0    |1;YES;Hello.;
+X к.: 2, Y к.: 0    |1;death;Hello.;
+X к.: 0, Y к.: 1    |0; ;WIN;
+X к.: 1, Y к.: 1    |0; ;WIN;
+X к.: 2, Y к.: 1    |0; ;WIN;
+X к.: 0, Y к.: 2    |0; ;LOSE;
+X к.: 1, Y к.: 2    |0; ;LOSE;
+X к.: 2, Y к.: 2    |0; ;LOSE;)"
             << endl;
+
     REQUIRE(EqualFile("input1.txt", "input2.txt") == true);
     fout_.close();
 
@@ -68,11 +78,16 @@ TEST_CASE("First") { //разветвление
     writing(kok1);
     fout_.open(path_);
     fout_
-            << R"(3)" << newline << R"(X к.: 0, Y к.: 0    |0; ;Hello.;)" << newline
-            << R"(X к.: 1, Y к.: 0    |1;YES;Hello.;)" << newline << R"(X к.: 2, Y к.: 0    |1;death;Hello.;)"
-            << newline << R"(X к.: 0, Y к.: 1    |0; ;OH;)" << newline << R"(X к.: 1, Y к.: 1    |0; ;OH;)" << newline
-            << R"(X к.: 2, Y к.: 1    |0; ;OH;)" << newline << R"(X к.: 0, Y к.: 2    |0; ;LOSE;)" << newline
-            << R"(X к.: 1, Y к.: 2    |0; ;LOSE;)" << newline << R"(X к.: 2, Y к.: 2    |0; ;LOSE;)"
+            << R"(3
+X к.: 0, Y к.: 0    |0; ;Hello.;
+X к.: 1, Y к.: 0    |1;YES;Hello.;
+X к.: 2, Y к.: 0    |1;death;Hello.;
+X к.: 0, Y к.: 1    |0; ;OH;
+X к.: 1, Y к.: 1    |0; ;OH;
+X к.: 2, Y к.: 1    |0; ;OH;
+X к.: 0, Y к.: 2    |0; ;LOSE;
+X к.: 1, Y к.: 2    |0; ;LOSE;
+X к.: 2, Y к.: 2    |0; ;LOSE;)"
             << endl;
     REQUIRE(EqualFile("input1.txt", "input2.txt") == true);
     fout_.close();
@@ -82,11 +97,16 @@ TEST_CASE("First") { //разветвление
     writing(kok1);
     fout_.open(path_);
     fout_
-            << R"(3)" << newline << R"(X к.: 0, Y к.: 0    |0; ;Hello.;)" << newline
-            << R"(X к.: 1, Y к.: 0    |1;YES;Hello.;)" << newline << R"(X к.: 2, Y к.: 0    |1;death;Hello.;)"
-            << newline << R"(X к.: 0, Y к.: 1    |0; ;OH;)" << newline << R"(X к.: 1, Y к.: 1    |0; ;OH;)" << newline
-            << R"(X к.: 2, Y к.: 1    |0; ;OH;)" << newline << R"(X к.: 0, Y к.: 2    |0; ;LOSE;)" << newline
-            << R"(X к.: 1, Y к.: 2    |1;;;)" << newline << R"(X к.: 2, Y к.: 2    |0; ;LOSE;)"
+            << R"(3
+X к.: 0, Y к.: 0    |0; ;Hello.;
+X к.: 1, Y к.: 0    |1;YES;Hello.;
+X к.: 2, Y к.: 0    |1;death;Hello.;
+X к.: 0, Y к.: 1    |0; ;OH;
+X к.: 1, Y к.: 1    |0; ;OH;
+X к.: 2, Y к.: 1    |0; ;OH;
+X к.: 0, Y к.: 2    |0; ;LOSE;
+X к.: 1, Y к.: 2    |1;;;
+X к.: 2, Y к.: 2    |0; ;LOSE;)"
             << endl;
 
     REQUIRE(EqualFile("input1.txt", "input2.txt") == true);
@@ -98,16 +118,24 @@ TEST_CASE("Second") {   //линеный
     const string way = "input1.txt";
     ofstream fout(way);
     fout
-            << R"(3)" << newline << R"(X к.: 0, Y к.: 0    |0; ;first;)" << newline
-            << R"(X к.: 1, Y к.: 0    |1;go;first;)" << newline << R"(X к.: 2, Y к.: 0    |0; ;first;)" << newline
-            << R"(X к.: 0, Y к.: 1    |0; ;second;)" << newline << R"(X к.: 1, Y к.: 1    |0; ;second;)" << newline
-            << R"(X к.: 2, Y к.: 1    |1;go!;second;)" << newline << R"(X к.: 0, Y к.: 2    |0; ;win;)" << newline
-            << R"(X к.: 1, Y к.: 2    |0; ;win;)" << newline << R"(X к.: 2, Y к.: 2    |0; ;win;)"
+            << R"(3
+X к.: 0, Y к.: 0    |0; ;first;
+X к.: 1, Y к.: 0    |1;go;first;
+X к.: 2, Y к.: 0    |0; ;first;
+X к.: 0, Y к.: 1    |0; ;second;
+X к.: 1, Y к.: 1    |0; ;second;
+X к.: 2, Y к.: 1    |1;go!;second;
+X к.: 0, Y к.: 2    |0; ;win;
+X к.: 1, Y к.: 2    |0; ;win;
+X к.: 2, Y к.: 2    |0; ;win;)"
             << endl;
+
+
 
     element_tablic kok1_, kok1;
     int kolich_vershin = 0;
     kok1 = reading(kok1_, kok1_, kolich_vershin);
+
 
     Dobavit_text1(1, 2, kok1, "hmm");
     writing(kok1);
@@ -115,11 +143,16 @@ TEST_CASE("Second") {   //линеный
     ofstream fout_;
     fout_.open(path_);
     fout_
-            << R"(3)" << newline << R"(X к.: 0, Y к.: 0    |0; ;first;)" << newline
-            << R"(X к.: 1, Y к.: 0    |1;hmm;first;)" << newline << R"(X к.: 2, Y к.: 0    |0; ;first;)" << newline
-            << R"(X к.: 0, Y к.: 1    |0; ;second;)" << newline << R"(X к.: 1, Y к.: 1    |0; ;second;)" << newline
-            << R"(X к.: 2, Y к.: 1    |1;go!;second;)" << newline << R"(X к.: 0, Y к.: 2    |0; ;win;)" << newline
-            << R"(X к.: 1, Y к.: 2    |0; ;win;)" << newline << R"(X к.: 2, Y к.: 2    |0; ;win;)"
+            << R"(3
+X к.: 0, Y к.: 0    |0; ;first;
+X к.: 1, Y к.: 0    |1;hmm;first;
+X к.: 2, Y к.: 0    |0; ;first;
+X к.: 0, Y к.: 1    |0; ;second;
+X к.: 1, Y к.: 1    |0; ;second;
+X к.: 2, Y к.: 1    |1;go!;second;
+X к.: 0, Y к.: 2    |0; ;win;
+X к.: 1, Y к.: 2    |0; ;win;
+X к.: 2, Y к.: 2    |0; ;win;)"
             << endl;
     REQUIRE(EqualFile("input1.txt", "input2.txt") == true);
     fout_.close();
@@ -129,11 +162,16 @@ TEST_CASE("Second") {   //линеный
     writing(kok1);
     fout_.open(path_);
     fout_
-            << R"(3)" << newline << R"(X к.: 0, Y к.: 0    |0; ;FIRST;)" << newline
-            << R"(X к.: 1, Y к.: 0    |1;hmm;FIRST;)" << newline << R"(X к.: 2, Y к.: 0    |0; ;FIRST;)" << newline
-            << R"(X к.: 0, Y к.: 1    |0; ;second;)" << newline << R"(X к.: 1, Y к.: 1    |0; ;second;)" << newline
-            << R"(X к.: 2, Y к.: 1    |1;go!;second;)" << newline << R"(X к.: 0, Y к.: 2    |0; ;win;)" << newline
-            << R"(X к.: 1, Y к.: 2    |0; ;win;)" << newline << R"(X к.: 2, Y к.: 2    |0; ;win;)"
+            << R"(3
+X к.: 0, Y к.: 0    |0; ;FIRST;
+X к.: 1, Y к.: 0    |1;hmm;FIRST;
+X к.: 2, Y к.: 0    |0; ;FIRST;
+X к.: 0, Y к.: 1    |0; ;second;
+X к.: 1, Y к.: 1    |0; ;second;
+X к.: 2, Y к.: 1    |1;go!;second;
+X к.: 0, Y к.: 2    |0; ;win;
+X к.: 1, Y к.: 2    |0; ;win;
+X к.: 2, Y к.: 2    |0; ;win;)"
             << endl;
     REQUIRE(EqualFile("input1.txt", "input2.txt") == true);
     fout_.close();
@@ -144,11 +182,16 @@ TEST_CASE("Second") {   //линеный
 
     fout_.open(path_);
     fout_
-            << R"(3)" << newline << R"(X к.: 0, Y к.: 0    |0; ;FIRST;)" << newline
-            << R"(X к.: 1, Y к.: 0    |1;hmm;FIRST;)" << newline << R"(X к.: 2, Y к.: 0    |0; ;FIRST;)" << newline
-            << R"(X к.: 0, Y к.: 1    |0; ;second;)" << newline << R"(X к.: 1, Y к.: 1    |0; ;second;)" << newline
-            << R"(X к.: 2, Y к.: 1    |1;go!;second;)" << newline << R"(X к.: 0, Y к.: 2    |1;;;)" << newline
-            << R"(X к.: 1, Y к.: 2    |0; ;win;)" << newline << R"(X к.: 2, Y к.: 2    |0; ;win;)"
+            << R"(3
+X к.: 0, Y к.: 0    |0; ;FIRST;
+X к.: 1, Y к.: 0    |1;hmm;FIRST;
+X к.: 2, Y к.: 0    |0; ;FIRST;
+X к.: 0, Y к.: 1    |0; ;second;
+X к.: 1, Y к.: 1    |0; ;second;
+X к.: 2, Y к.: 1    |1;go!;second;
+X к.: 0, Y к.: 2    |1;;;
+X к.: 1, Y к.: 2    |0; ;win;
+X к.: 2, Y к.: 2    |0; ;win;)"
             << endl;
 
     REQUIRE(EqualFile("input1.txt", "input2.txt") == true);
@@ -159,11 +202,16 @@ TEST_CASE("Third") {    //замкнутый круг
     const string way = "input1.txt";
     ofstream fout(way);
     fout
-            << R"(3)" << newline << R"(X к.: 0, Y к.: 0    |0; ;fi;)" << newline << R"(X к.: 1, Y к.: 0    |1; ;fi;)"
-            << newline << R"(X к.: 2, Y к.: 0    |0; ;fi;)" << newline << R"(X к.: 0, Y к.: 1    |0; ;se;)" << newline
-            << R"(X к.: 1, Y к.: 1    |0; ;se;)" << newline << R"(X к.: 2, Y к.: 1    |1; ;se;)" << newline
-            << R"(X к.: 0, Y к.: 2    |1;;th;)" << newline << R"(X к.: 1, Y к.: 2    |0; ;th;)" << newline
-            << R"(X к.: 2, Y к.: 2    |0; ;th;)"
+            << R"(3
+X к.: 0, Y к.: 0    |0; ;fi;
+X к.: 1, Y к.: 0    |1; ;fi;
+X к.: 2, Y к.: 0    |0; ;fi;
+X к.: 0, Y к.: 1    |0; ;se;
+X к.: 1, Y к.: 1    |0; ;se;
+X к.: 2, Y к.: 1    |1; ;se;
+X к.: 0, Y к.: 2    |1;;th;
+X к.: 1, Y к.: 2    |0; ;th;
+X к.: 2, Y к.: 2    |0; ;th;)"
             << endl;
 
     element_tablic kok1_, kok1;
@@ -179,11 +227,16 @@ TEST_CASE("Third") {    //замкнутый круг
     ofstream fout_;
     fout_.open(path_);
     fout_
-            << R"(3)" << newline << R"(X к.: 0, Y к.: 0    |0; ;AAA;)" << newline << R"(X к.: 1, Y к.: 0    |1; ;AAA;)"
-            << newline << R"(X к.: 2, Y к.: 0    |0; ;AAA;)" << newline << R"(X к.: 0, Y к.: 1    |0; ;BBB;)" << newline
-            << R"(X к.: 1, Y к.: 1    |0; ;BBB;)" << newline << R"(X к.: 2, Y к.: 1    |1; ;BBB;)" << newline
-            << R"(X к.: 0, Y к.: 2    |1;;CCC;)" << newline << R"(X к.: 1, Y к.: 2    |0; ;CCC;)" << newline
-            << R"(X к.: 2, Y к.: 2    |0; ;CCC;)"
+            << R"(3
+X к.: 0, Y к.: 0    |0; ;AAA;
+X к.: 1, Y к.: 0    |1; ;AAA;
+X к.: 2, Y к.: 0    |0; ;AAA;
+X к.: 0, Y к.: 1    |0; ;BBB;
+X к.: 1, Y к.: 1    |0; ;BBB;
+X к.: 2, Y к.: 1    |1; ;BBB;
+X к.: 0, Y к.: 2    |1;;CCC;
+X к.: 1, Y к.: 2    |0; ;CCC;
+X к.: 2, Y к.: 2    |0; ;CCC;)"
             << endl;
 
     REQUIRE(EqualFile("input1.txt", "input2.txt") == true);
@@ -196,11 +249,16 @@ TEST_CASE("Third") {    //замкнутый круг
 
     fout_.open(path_);
     fout_
-            << R"(3)" << newline << R"(X к.: 0, Y к.: 0    |0; ;AAA;)" << newline << R"(X к.: 1, Y к.: 0    |1;a;AAA;)"
-            << newline << R"(X к.: 2, Y к.: 0    |0; ;AAA;)" << newline << R"(X к.: 0, Y к.: 1    |0; ;BBB;)" << newline
-            << R"(X к.: 1, Y к.: 1    |0; ;BBB;)" << newline << R"(X к.: 2, Y к.: 1    |1;b;BBB;)" << newline
-            << R"(X к.: 0, Y к.: 2    |1;c;CCC;)" << newline << R"(X к.: 1, Y к.: 2    |0; ;CCC;)" << newline
-            << R"(X к.: 2, Y к.: 2    |0; ;CCC;)"
+            << R"(3
+X к.: 0, Y к.: 0    |0; ;AAA;
+X к.: 1, Y к.: 0    |1;a;AAA;
+X к.: 2, Y к.: 0    |0; ;AAA;
+X к.: 0, Y к.: 1    |0; ;BBB;
+X к.: 1, Y к.: 1    |0; ;BBB;
+X к.: 2, Y к.: 1    |1;b;BBB;
+X к.: 0, Y к.: 2    |1;c;CCC;
+X к.: 1, Y к.: 2    |0; ;CCC;
+X к.: 2, Y к.: 2    |0; ;CCC;)"
             << endl;
 
     REQUIRE(EqualFile("input1.txt", "input2.txt") == true);

@@ -13,7 +13,7 @@ typedef vector<vector<Vershina>> element_tablic; /// Тип данных для 
 extern bool error() {
     if (cin.fail()) {
         cin.clear();
-        cerr << "   !!!" << endl << "!Вы ввели не число, выберите команду заного!" << endl << "   !!!" << endl;
+        cerr << "   !!!" << "\n" << "!Вы ввели не число, выберите команду заного!" << "\n" << "   !!!" << "\n";
         return true;
     }
     return false;
@@ -21,15 +21,15 @@ extern bool error() {
 
 extern void error_(int &nomer_vershini, int &kolich_vershin) {
     while ((kolich_vershin < nomer_vershini) || (nomer_vershini < 0)) {
-        cerr << "Номер этой вершины выходит за рамки общего количества вершин" << endl;
-        cerr << "Введите заного количество вершин не больше  " << kolich_vershin << endl;
+        cerr << "Номер этой вершины выходит за рамки общего количества вершин" << "\n";
+        cerr << "Введите заного количество вершин не больше  " << kolich_vershin << "\n";
         cout << "Введите: ";
         cin >> nomer_vershini;
     }
 }
 
 void TextNovoiKomandi() {
-    cout << "Готово" << endl;
+    cout << "Готово" << "\n";
     cout << "Введите команду: ";
 }
 
@@ -41,19 +41,19 @@ void VivodTabl(element_tablic &kok, int &kolich_vershin) {
     for (int dlina = 1; dlina <= kolich_vershin; ++dlina) {
         cout << setw(3) << dlina;
     }
-    cout << endl;
+    cout << "\n";
     for (auto i: kok) {
         cout << setw(2) << sh << ": ";
         ++sh;
         for (auto j: i) {
             cout << setw(2) << j.chislo << " ";
         }
-        cout << endl;
+        cout << "\n";
     }
 }
 
 void Nachalo(int ishodnoe_polozh, element_tablic &kok, int &posledn_elem_c1, int &kolich_vershin) {
-    cout << "Сколько развилок вы хотите?" << endl;
+    cout << "Сколько развилок вы хотите?" << "\n";
     int kolichestvo_razvilok;
     cin >> kolichestvo_razvilok;
 
@@ -62,8 +62,8 @@ void Nachalo(int ishodnoe_polozh, element_tablic &kok, int &posledn_elem_c1, int
         exit(0);
     }
     while ((kolich_vershin <= kolichestvo_razvilok) || (kolichestvo_razvilok < 0)) {
-        cerr << "Количество развилок выходит за рамки общего количества вершин" << endl;
-        cerr << "Введите заного количество вершин не больше  " << kolich_vershin << endl;
+        cerr << "Количество развилок выходит за рамки общего количества вершин" << "\n";
+        cerr << "Введите заного количество вершин не больше  " << kolich_vershin << "\n";
         cout << "Введите: ";
         cin >> kolichestvo_razvilok;
         if (cin.fail()) {
@@ -83,11 +83,11 @@ void Nachalo(int ishodnoe_polozh, element_tablic &kok, int &posledn_elem_c1, int
     for (kol_raz1; kol_raz1 != 0; --kol_raz1) {
         cout << kolichestvo_razvilok + kol_raz1 + 1 << " ";
     }
-    cout << endl;
+    cout << "\n";
 }
 
 void Prodol(int ishodnoe_polozh, element_tablic &kok, int &posledn_elem_c1, int &kolich_vershin) {
-    cout << "Сколько развилок вы хотите?" << endl;
+    cout << "Сколько развилок вы хотите?" << "\n";
     int kolichestvo_razvilok;
     cin >> kolichestvo_razvilok;
     error_(kolichestvo_razvilok, kolich_vershin);
@@ -105,7 +105,7 @@ void Prodol(int ishodnoe_polozh, element_tablic &kok, int &posledn_elem_c1, int 
     for (kol_raz1; kol_raz1 != 0; --kol_raz1) {
         cout << posledn_elem_c1 + kol_raz1 + 1 << " ";
     }
-    cout << endl;
+    cout << "\n";
     posledn_elem_c1 += kol_raz2;
 }
 
@@ -116,11 +116,12 @@ void Dobavit_text1(int otkuda, int kuda, element_tablic &kok,
     kok[otkuda - 1][kuda - 1] = gg_;
 }
 
-int VvodChislaPolsovat(int &kolich_vershin) {
+tuple<bool, int> VvodChislaPolsovat(int &kolich_vershin) {
     int chislo;
     cin >> chislo;
     error_(chislo, kolich_vershin);
-    return chislo;
+    bool check1 = error();
+    return make_tuple(check1, chislo);
 }
 
 void text_pri_popad_na_versh(element_tablic &kok, int nomer,
@@ -136,18 +137,20 @@ void text_pri_popad_na_versh(element_tablic &kok, int nomer,
 
 void infa_element(element_tablic kok, int &kolich_vershin) {
     cout << "Введите значение элемента по Х:";
+    bool check1;
+    int x_;
+    tie(check1, x_) = VvodChislaPolsovat(kolich_vershin);
 
-    int x_ = VvodChislaPolsovat(kolich_vershin);
-
-    bool check1 = error();
     if (check1 == true) { return; }
     cout << "Введите значение элемента по Y:";
-    int y_ = VvodChislaPolsovat(kolich_vershin);
-    bool check2 = error();
+
+    bool check2;
+    int y_;
+    tie(check2, y_) = VvodChislaPolsovat(kolich_vershin);
     if (check2 == true) { return; }
-    cout << "Число: " << kok[y_ - 1][x_ - 1].chislo << endl;
-    cout << "Текст выбора: " << kok[y_ - 1][x_ - 1].text1 << endl;
-    cout << "Текст исхода: " << kok[y_ - 1][x_ - 1].text2 << endl;
+    cout << "Число: " << kok[y_ - 1][x_ - 1].chislo << "\n";
+    cout << "Текст выбора: " << kok[y_ - 1][x_ - 1].text1 << "\n";
+    cout << "Текст исхода: " << kok[y_ - 1][x_ - 1].text2 << "\n";
 }
 
 void add_new_vershina(element_tablic &kok, int x, int y) {
@@ -161,19 +164,19 @@ void Game(const element_tablic &kok, int &kolich_vershin) {
     int place = 1;
     bool check = true;
     while (chetchik != 0) {
-        cout << kok[place - 1][1].text2 << endl;
+        cout << kok[place - 1][1].text2 << "\n";
         int i = 0;
         bool check = false;
         for (auto k: kok[place - 1]) {
             ++i;
             if (k.chislo == 1) {
-                cout << i << " - " << k.text1 << endl;
+                cout << i << " - " << k.text1 << "\n";
                 check = true;
             }
         }
         if (check == false) {
             chetchik = 0;
-            cout << "Конец игры" << endl;
+            cout << "Конец игры" << "\n";
         } else {
             cout << "Выберите номера вашего хода: ";
             cin >> place;
@@ -185,12 +188,12 @@ void Game(const element_tablic &kok, int &kolich_vershin) {
 }
 
 void komandi() {
-    cout << "Выберите команду:" << endl << " 0 - 'Вывести список команд'" << endl
-         << " 1 - 'Продолжить создавать разветвления'" << endl
-         << " 2 - 'Добавить текст перехода из одной вершины в другую'" << endl
-         << " 3 - 'Добавить текст при попадании на данную вершину'" << endl << " 4 - 'Завершить'" << endl
-         << " 5 - 'Информация о вершине'" << endl << " 6 - 'Связать две вершины'" << endl << " 7 - 'Вывести таблицу'"
-         << endl << " 8 - 'Начать игру'" << endl << " 9 - 'Сохранить'" << endl << "10 - 'Открыть игру из файла" << endl;
+    cout << "Выберите команду:" << "\n" << " 0 - 'Вывести список команд'" << "\n"
+         << " 1 - 'Продолжить создавать разветвления'" << "\n"
+         << " 2 - 'Добавить текст перехода из одной вершины в другую'" << "\n"
+         << " 3 - 'Добавить текст при попадании на данную вершину'" << "\n" << " 4 - 'Завершить'" << "\n"
+         << " 5 - 'Информация о вершине'" << "\n" << " 6 - 'Связать две вершины'" << "\n" << " 7 - 'Вывести таблицу'"
+         << "\n" << " 8 - 'Начать игру'" << "\n" << " 9 - 'Сохранить'" << "\n" << "10 - 'Открыть игру из файла" << "\n";
 }
 
 
@@ -199,17 +202,17 @@ void writing(element_tablic &kok) {
     ofstream fout;
     fout.open(path);
     if (!fout.is_open()) {
-        cout << "Не найден файл" << endl;
+        cout << "Не найден файл" << "\n";
     } else {
         int dlina = kok.size();
-        fout << dlina << endl;
+        fout << dlina << "\n";
         for (int i = 0; i < dlina; ++i) {
             for (int j = 0; j < dlina; ++j) {
                 fout << "X к.: " << j << ", Y к.: " << i << "    |" << kok[i][j].chislo << ";" << kok[i][j].text1 << ";"
-                     << kok[i][j].text2 << ";" << endl;
+                     << kok[i][j].text2 << ";" << "\n";
             }
         }
-        cout << "Файл успешно сохранён" << endl;
+        cout << "Файл успешно сохранён" << "\n";
     }
     fout.close();
 }
@@ -227,12 +230,12 @@ element_tablic reading(element_tablic &kok_, element_tablic &kok_zapasnoi, int &
     ifstream output;
     output.open(path);
     if (!output.is_open()) {
-        cout << "Не найден файл" << endl;
+        cout << "Не найден файл" << "\n";
     } else {
         output >> kolich_vershin;
 
         if (kolich_vershin == 0) {
-            cerr << "Некоректные исходные данные в файле" << endl;
+            cerr << "Некоректные исходные данные в файле" << "\n";
             return (kok_zapasnoi);
         }
 
@@ -263,7 +266,7 @@ element_tablic reading(element_tablic &kok_, element_tablic &kok_zapasnoi, int &
 
                         if (check_ == 1) {
                             if (!IsNumber(obch)) {
-                                cerr << "Некоректные исходные данные в файле" << endl;
+                                cerr << "Некоректные исходные данные в файле" << "\n";
                                 return (kok_zapasnoi);
                             }
                             chislo_ = stoi(obch);
@@ -281,7 +284,7 @@ element_tablic reading(element_tablic &kok_, element_tablic &kok_zapasnoi, int &
                     }
                 }
                 if (chislo_ != 1 && chislo_ != 0) {
-                    cerr << "Некоректные исходные данные в файле" << endl;
+                    cerr << "Некоректные исходные данные в файле" << "\n";
                     return (kok_zapasnoi);
                 }
                 Vershina gg_{chislo_, text1_, text2_};
@@ -290,11 +293,11 @@ element_tablic reading(element_tablic &kok_, element_tablic &kok_zapasnoi, int &
         }
 
         if (chet_error != kolich_vershin * kolich_vershin) {
-            cerr << "Некоректные исходные данные в файле" << endl;
+            cerr << "Некоректные исходные данные в файле" << "\n";
             return (kok_zapasnoi);
         }
 
-        cout << "Файл успешно открыт" << endl;
+        cout << "Файл успешно открыт" << "\n";
     }
     return kok_;
 }

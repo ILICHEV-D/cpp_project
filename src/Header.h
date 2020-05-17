@@ -1,6 +1,6 @@
 #include <vector>
 #include <string>
-
+#include <tuple>
 
 using namespace std;
 
@@ -37,7 +37,7 @@ extern void Game(const element_tablic &kok, int &kolich_vershin); /// Начин
 
 extern bool IsNumber(const string &s); /// Находит в строке числа
 
-extern int VvodChislaPolsovat(int &kolich_vershin);
+extern tuple<bool, int> VvodChislaPolsovat(int &kolich_vershin);
 
 extern void komandi(); ///Выводит доступные команды
 

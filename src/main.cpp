@@ -15,7 +15,7 @@ typedef vector<vector<Vershina>> element_tablic; /// Тип данных для 
 int main() {
     int posledn_elem_c1 = 0;
     int kolich_vershin = 0;
-    cout << "Сколько будет вершин?" << endl;
+    cout << "Сколько будет вершин?" << "\n";
     cin >> kolich_vershin;
 
     if (cin.fail()) {
@@ -23,7 +23,7 @@ int main() {
         exit(0);
     }
     while (kolich_vershin <= 0) {
-        cerr << "Вершин не может быть меньше 1" << endl;
+        cerr << "Вершин не может быть меньше 1" << "\n";
         cerr << "Введите число заного: ";
         cin >> kolich_vershin;
         if (cin.fail()) {
@@ -42,6 +42,7 @@ int main() {
         }
     }
 
+
     Nachalo(1, kok, posledn_elem_c1, kolich_vershin);
     VivodTabl(kok, kolich_vershin);
 
@@ -54,7 +55,7 @@ int main() {
 
         if (komanda != "") {
             while (!IsNumber(komanda) || (stoi(komanda) < 0) || (stoi(komanda)) > 10) {
-                cerr << "Вы ввели неправильное число" << endl;
+                cerr << "Вы ввели неправильное число" << "\n";
                 cerr << "Введите еще раз: ";
                 cin >> komanda;
             }
@@ -82,16 +83,17 @@ int main() {
 
         if (komanda == "2") {
             cout << "Введите номер вершины из которой выходит герой(см. по Y): ";
+            bool check1;
+            int nomer1;
+            tie(check1, nomer1) = VvodChislaPolsovat(kolich_vershin);
 
-            int nomer1 = VvodChislaPolsovat(kolich_vershin);
-
-            bool check1 = error();
             if (check1 == true) { continue; }
             cout << "Введите номер вершины в которую входит герой(см. по X): ";
 
-            int nomer2 = VvodChislaPolsovat(kolich_vershin);
+            bool check2;
+            int nomer2;
+            tie(check2, nomer2) =  VvodChislaPolsovat(kolich_vershin);
 
-            bool check2 = error();
             if (check2 == true) { continue; }
             string new_text;
             getline(cin, new_text);
@@ -107,10 +109,10 @@ int main() {
         }
         if (komanda == "3") {
             cout << "Введите номер вершины из которой выходит герой (см. по Y): ";
+            bool check1;
+            int nomer;
+            tie(check1, nomer) = VvodChislaPolsovat(kolich_vershin);
 
-            int nomer = VvodChislaPolsovat(kolich_vershin);
-
-            bool check1 = error();
             if (check1 == true) { continue; }
             cout << "Введите текст: ";
             string text;
@@ -137,16 +139,16 @@ int main() {
 
         if (komanda == "6") {
             cout << "Введите значение элемента по Х:";
+            bool check1;
+            int x;
+            tie(check1, x) = VvodChislaPolsovat(kolich_vershin);
 
-            int x = VvodChislaPolsovat(kolich_vershin);
-
-            bool check1 = error();
             if (check1 == true) { continue; }
             cout << "Введите значение элемента по Y:";
 
-            int y = VvodChislaPolsovat(kolich_vershin);
-
-            bool check2 = error();
+            bool check2;
+            int y;
+            tie(check2, y) = VvodChislaPolsovat(kolich_vershin);
             if (check2 == true) { continue; }
             add_new_vershina(kok, x, y);
             TextNovoiKomandi();

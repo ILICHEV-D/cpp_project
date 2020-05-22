@@ -1,11 +1,12 @@
 #include <vector>
 #include <string>
 #include <tuple>
+#include <algorithm>
 
 using namespace std;
 
 
-extern struct Vershina {
+struct Vershina {
     int chislo; /// Число, которое показывает, связь вершин в таблице смежности
     string text1; /// Текст, описывающий вершину, когда не нее еще не зашли
     string text2; /// Текст, описывающий вершину, когда не нее уже зашли

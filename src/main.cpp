@@ -13,45 +13,63 @@ typedef vector<vector<Vershina>> element_tablic; /// Тип данных для 
 
 
 int main() {
+    string komanda;
     int posledn_elem_c1 = 0;
     int kolich_vershin = 0;
-    cout << "Сколько будет вершин?" << "\n";
-    cin >> kolich_vershin;
-
-    if (cin.fail()) {
-        cout << "Вы ввели не число, начните заного";
-        exit(0);
+    cout << "Хотите загрузить уже готовую игру или создать новую?" << "\n";
+    cout << "1 - Загрузить игру" << "\n" << "2 - Создать новую игру" << "\n";
+    cout << "Введите команду: ";
+    int opredelit = 0;
+    cin >> opredelit;
+    while (opredelit != 1 and opredelit != 2){
+        cerr << "\n" << "Введите число 1 или 2" << "\n";
+        cout << "Введите команду заного ";
+        cin >> opredelit;
+        bool check1 = error();
+        if (check1 == true) { break; }
     }
-    while (kolich_vershin <= 0) {
-        cerr << "Вершин не может быть меньше 1" << "\n";
-        cerr << "Введите число заного: ";
+    element_tablic kok;
+    if (opredelit == 1) {
+        element_tablic kok_;
+        kok = reading(kok_, kok, kolich_vershin);
+    }
+    else if (opredelit = 2) {
+        cout << "Сколько будет вершин?" << "\n";
         cin >> kolich_vershin;
+
         if (cin.fail()) {
             cout << "Вы ввели не число, начните заного";
             exit(0);
-        };
-    }
-
-    element_tablic kok;
-    kok.resize(kolich_vershin);
-    for (int i = 0; i != kolich_vershin; ++i) {
-        kok[i].resize(kolich_vershin);
-        for (int j = 0; j != kolich_vershin; ++j) {
-            Vershina gg{0, " ", " "};
-            kok[i][j] = gg;
         }
+        while (kolich_vershin <= 0) {
+            cerr << "Вершин не может быть меньше 1" << "\n";
+            cerr << "Введите число заного: ";
+            cin >> kolich_vershin;
+            if (cin.fail()) {
+                cout << "Вы ввели не число, начните заного";
+                exit(0);
+            };
+        }
+
+        kok.resize(kolich_vershin);
+        for (int i = 0; i != kolich_vershin; ++i) {
+            kok[i].resize(kolich_vershin);
+            for (int j = 0; j != kolich_vershin; ++j) {
+                Vershina gg{0, " ", " "};
+                kok[i][j] = gg;
+            }
+        }
+
+
+        Nachalo(1, kok, posledn_elem_c1, kolich_vershin);
+        VivodTabl(kok, kolich_vershin);
     }
 
+        komandi();
+        int chetchik = 1;
 
-    Nachalo(1, kok, posledn_elem_c1, kolich_vershin);
-    VivodTabl(kok, kolich_vershin);
-
-    komandi();
-    int chetchik = 1;
     while (chetchik != 0) {
-        string komanda;
         getline(cin, komanda);
-
 
         if (komanda != "") {
             while (!IsNumber(komanda) || (stoi(komanda) < 0) || (stoi(komanda)) > 10) {

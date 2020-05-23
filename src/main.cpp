@@ -21,7 +21,7 @@ int main() {
     cout << "Введите команду: ";
     int opredelit = 0;
     cin >> opredelit;
-    while (opredelit != 1 and opredelit != 2){
+    while (opredelit != 1 and opredelit != 2) {
         cerr << "\n" << "Введите число 1 или 2" << "\n";
         cout << "Введите команду заного ";
         cin >> opredelit;
@@ -32,8 +32,7 @@ int main() {
     if (opredelit == 1) {
         element_tablic kok_;
         kok = reading(kok_, kok, kolich_vershin);
-    }
-    else if (opredelit = 2) {
+    } else if (opredelit = 2) {
         cout << "Сколько будет вершин?" << "\n";
         cin >> kolich_vershin;
 
@@ -65,8 +64,8 @@ int main() {
         VivodTabl(kok, kolich_vershin);
     }
 
-        komandi();
-        int chetchik = 1;
+    komandi();
+    int chetchik = 1;
 
     while (chetchik != 0) {
         getline(cin, komanda);
@@ -110,7 +109,7 @@ int main() {
 
             bool check2;
             int nomer2;
-            tie(check2, nomer2) =  VvodChislaPolsovat(kolich_vershin);
+            tie(check2, nomer2) = VvodChislaPolsovat(kolich_vershin);
 
             if (check2 == true) { continue; }
             string new_text;

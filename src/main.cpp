@@ -100,16 +100,14 @@ int main() {
 
         if (komanda == "2") {
             cout << "Введите номер вершины из которой выходит герой(см. по Y): ";
-            bool check1;
-            int nomer1;
-            tie(check1, nomer1) = VvodChislaPolsovat(kolich_vershin);
+          //  bool check1;
+         //   int nomer1;
+            auto [check1, nomer1]  = VvodChislaPolsovat(kolich_vershin);
 
             if (check1 == true) { continue; }
             cout << "Введите номер вершины в которую входит герой(см. по X): ";
 
-            bool check2;
-            int nomer2;
-            tie(check2, nomer2) = VvodChislaPolsovat(kolich_vershin);
+            auto [check2, nomer2] = VvodChislaPolsovat(kolich_vershin);
 
             if (check2 == true) { continue; }
             string new_text;
@@ -126,9 +124,7 @@ int main() {
         }
         if (komanda == "3") {
             cout << "Введите номер вершины из которой выходит герой (см. по Y): ";
-            bool check1;
-            int nomer;
-            tie(check1, nomer) = VvodChislaPolsovat(kolich_vershin);
+            auto [check1, nomer] = VvodChislaPolsovat(kolich_vershin);
 
             if (check1 == true) { continue; }
             cout << "Введите текст: ";
@@ -156,16 +152,12 @@ int main() {
 
         if (komanda == "6") {
             cout << "Введите значение элемента по Х:";
-            bool check1;
-            int x;
-            tie(check1, x) = VvodChislaPolsovat(kolich_vershin);
+            auto [check1, x] = VvodChislaPolsovat(kolich_vershin);
 
             if (check1 == true) { continue; }
             cout << "Введите значение элемента по Y:";
 
-            bool check2;
-            int y;
-            tie(check2, y) = VvodChislaPolsovat(kolich_vershin);
+            auto [check2, y] = VvodChislaPolsovat(kolich_vershin);
             if (check2 == true) { continue; }
             add_new_vershina(kok, x, y);
             TextNovoiKomandi();
